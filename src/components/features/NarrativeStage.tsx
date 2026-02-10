@@ -5,14 +5,14 @@ import { SecretLayer } from './SecretLayer';
 import { TimeCounter } from './TimeCounter';
 import { MusicPlayer } from './MusicPlayer';
 const FULL_MESSAGE = [
-'Mi amor, quiero que sepas que eres lo más bonito que me ha pasado en la vida.',
-'Cada momento contigo es mágico, tus ojos iluminan hasta mis días más oscuros. 🌹',
-'Eres mi paz, mi felicidad, mi todo. No cambiaría ni un segundo de lo que hemos vivido juntos.',
-'Gracias por ser tú, por quererme como lo haces, por hacerme sentir el hombre más afortunado. 💗',
-'Prometo seguir cuidándote, haciéndote reír, y amándote cada día más fuerte.',
-'Este 14 de febrero es especial porque lo celebro contigo, my monita. 🌸',
-'Con todo mi amor, para siempre tuyo 💕',
-'Feliz San Valentín, mi vida'].
+'Luciana vea, quiero que sepas que eres una de las mejor amigas que la vida me pudo dar.',
+'Usted sabe q aunq la insulte o la critique es porq la quiero',
+'Aunque no le hace caso a mis consejos, siempre estoy ahí para apoyarla en lo que necesite.',
+'Gracias por ser tú, por quererme como lo haces, por hacerme sentir muy bien.',
+'Aunq me critiques todas mis parlas sabes q tu opinion me importa mucho.',
+'Este 14 de febrero es para celebrar que tengo una amistad tan real como la tuya.',
+'Ya sabes que contas conmigo para lo que sea niña.',
+'Feliz San dia de la amistad se le quiere🩷.'].
 join('\n\n');
 export function NarrativeStage() {
   const [step, setStep] = useState<'sphere' | 'content'>('sphere');
@@ -83,12 +83,12 @@ export function NarrativeStage() {
                 fill="currentColor" />
 
               </div>
-              <div className="absolute inset-0 rounded-full border-2 border-white/30 animate-ping" />
-              <p className="absolute -bottom-16 w-64 left-1/2 -translate-x-1/2 text-center text-cyan-200 text-lg font-luxury italic animate-pulse">
-                Presiona para ver cómo florece nuestro amor
-              </p>
-            </div>
-          </motion.div> :
+            <div className="absolute inset-0 rounded-full border-2 border-white/30 animate-ping" />
+            <p className="absolute -bottom-32 w-64 left-1/2 -translate-x-1/2 text-center text-cyan-200 text-lg font-luxury italic animate-pulse">
+              Presione acá, si tiene la suficiente capacidad neuronal pa ver la carta...
+            </p>
+          </div>
+        </motion.div> :
 
         <motion.div
           key="content"
@@ -122,7 +122,7 @@ export function NarrativeStage() {
 
                 Para mi{' '}
                 <span className="underline decoration-violet-500 decoration-2 underline-offset-4">
-                  monita hermosa
+                  Increible amiga
                 </span>
               </motion.h2>
 

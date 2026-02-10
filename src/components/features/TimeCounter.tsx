@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTimeDifference } from '../../hooks/useTimeDifference';
 export function TimeCounter() {
-  // January 13, 2026
-  const startDate = new Date('2026-01-13T00:00:00');
+  // November 4, 2025
+  const startDate = new Date('2025-11-04T00:00:00');
   const { days, hours, minutes, seconds } = useTimeDifference(startDate);
   const TimeUnit = ({ value, label }: {value: number;label: string;}) => {
     const [prevValue, setPrevValue] = useState(value);
@@ -33,7 +33,7 @@ export function TimeCounter() {
   return (
     <div className="w-full max-w-md mx-auto p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 flex flex-col items-center text-center space-y-6">
       <h3 className="font-luxury italic text-lg text-white/90">
-        Llevamos escribiendo nuestra historia...
+        llevamos aguantandonos hace...
       </h3>
 
       <div className="flex flex-wrap justify-center items-center">
@@ -47,7 +47,7 @@ export function TimeCounter() {
       </div>
 
       <p className="text-sm text-white/80 font-light leading-relaxed max-w-xs">
-        Cada segundo desde el 13 de enero ha sido el mejor regalo de mi vida. 💗
+        Ns como te he soportado tanto pero hemos compartido muchas cosas y eso se le aprecia.
       </p>
     </div>);
 

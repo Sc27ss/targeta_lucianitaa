@@ -59,9 +59,7 @@ export function SecretLayer({ isVisible, onClose }: SecretLayerProps) {
             }}
             className="text-2xl font-luxury italic leading-relaxed text-white">
 
-              "Desde aquel 13 de enero, no hay un solo día en que no me hagas
-              sonreír. Sos lo que siempre quise y no sabía cómo pedirlo. Gracias
-              por elegirme cada segundo, Monita. 💗"
+              "Desde aquel 4 de noviembre, no hay un solo día en que no me hagas reír con tus bobadas. Sos la mejor amiga que pude pedir. Gracias por estar ahí siempre, Lucianita. 🩷"
             </motion.p>
 
             <motion.div

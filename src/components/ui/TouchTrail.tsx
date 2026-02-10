@@ -77,7 +77,7 @@ export function TouchTrail() {
             pointerEvents: 'none'
           }}>
 
-            💗
+            🩷
           </motion.div>
         )}
       </AnimatePresence>

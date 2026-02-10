@@ -32,12 +32,12 @@ export function GlitchScreen() {
       </div>
 
       <p className="text-xl text-gray-300 max-w-md font-mono mt-8 leading-relaxed">
-        Amor, mala mía... todavía no sé hacer pa' que quedara bien en todos los
+        luciana, mala mía... todavía no sé hacer pa' que quedara bien en todos los
         dispositivos jajajaa.
         <br />
         <br />
         <span className="text-pink-500 font-bold">
-          Solo se puede ver en celular. 💗
+          Solo se puede ver en celular. 🩷
         </span>
       </p>
 

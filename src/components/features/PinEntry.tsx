@@ -7,7 +7,7 @@ interface PinEntryProps {
 export function PinEntry({ onSuccess }: PinEntryProps) {
   const [pin, setPin] = useState('');
   const [error, setError] = useState(false);
-  const CORRECT_PIN = '1301';
+  const CORRECT_PIN = '0411';
   const handleNumberClick = (num: string) => {
     if (pin.length < 4) {
       const newPin = pin + num;
@@ -61,9 +61,9 @@ export function PinEntry({ onSuccess }: PinEntryProps) {
           }}>
 
           <LockIcon className="w-12 h-12 text-cyan-400 mx-auto mb-4 opacity-80" />
-          <h2 className="text-2xl font-luxury text-white mb-2">Targeta Monita</h2>
+          <h2 className="text-2xl font-luxury text-white mb-2">Tarjeta Malparidita</h2>
           <p className="text-gray-300 text-sm max-w-xs mx-auto">
-            Nuestra historia comenzó un día de enero... ¿Recuerdas cuál?
+            Nuestra amistad empezó un día de noviembre... ¿si sabe cual?
           </p>
         </motion.div>
       </div>
