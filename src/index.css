@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-cyan: #00f3ff;
+  --neon-violet: #bc13fe;
+  --deep-space: #050510;
+  --gold: #ffd700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--deep-space);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden; /* Prevent scrolling for immersive feel */
+  touch-action: none; /* Prevent default touch actions like zoom */
+}
+
+/* Custom Scrollbar for content if needed */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--neon-violet);
+  border-radius: 2px;
+}
+
+/* Utility classes for specific text styles */
+.font-luxury {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-tech {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.glass-button:active {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(0.95);
+}
+
+/* Text Glows */
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.5), 0 0 20px rgba(0, 243, 255, 0.3);
+}
+
+.text-glow-violet {
+  text-shadow: 0 0 10px rgba(188, 19, 254, 0.5), 0 0 20px rgba(188, 19, 254, 0.3);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px var(--neon-violet), 0 0 40px var(--neon-cyan); }
+  50% { box-shadow: 0 0 40px var(--neon-violet), 0 0 80px var(--neon-cyan); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s infinite ease-in-out;
+}
